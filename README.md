@@ -23,10 +23,21 @@ four pillars of Object-Oriented Programming (OOP).
 Use the following questions to guide your exploration and learning! 🗺
 
 - Run your Console application, what is it doing? What is being outputted to the console?
+My answer: The console produces some text showing that the DodgyBankAccount section of code is allowing the main class to access its variables directly and make changes, while the SecureBankAccount section isn't. 
 
 - Look at the `DodgyBankAccount`, this class is not well-encapsulated. Can you note down the problems with how the class is designed, and the ways it is being misused?
+My answer:
+1) All variables are allowing public access. Any other classes in the project can have access or make changes to these vaiables.
+2) No specific naming conventions to identify the type of variable whether they are class-specific or from other classes.
 
 - Compare and contrast the `DodgyBankAccount` and the `SecureBankAccount`, how is the `SecureBankAccount` different to the `DodgyBankAccount`? How is it designed to prevent it from being misused? Are there instances of better method names for clearer abstraction?
+My answer:
+1) All variables are made private.
+2) A constant is used in place of a variable to identify that the value is not supposed to be changed.
+3) A variable is set to read only for any other classes, and can make changes only from within this class.
+4) A variable is set to only for use within the class, and will be destroyed once the class ends.
+5) All variable names within this class are identified by starting with an underline.
+
 
 ---
 ## 🐸 Extension Challenge
